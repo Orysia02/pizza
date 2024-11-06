@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    .header{
+        height: 80px;
+        min-width: 100%;
+        background-color: #EC4D30;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        .left-side{
+            background-color: #B83922;
+            width: 420px;
+            height: 60px;
+            display: flex;
+            justify-content: right;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            padding: 15px;
+
+            svg{
+                margin-top: -35px;
+                margin-right: 70px;
+            }
+        }
+
+        h2{
+            color: white;
+            margin-left: -110px;
+        }
+
+        .menu {
+            list-style-type: none;
+            color: white;
+            display: flex;
+            width: 600px;
+            justify-content: space-around;
+            padding: 50px;
+
+            a{
+                text-decoration: none;
+                color: white;
+            }
+
+            .item{
+                padding: 8px;
+            }
+
+            .item:hover{
+                background-color: #B83922;
+            }
+        }
+
+        .icons{
+            width: 420px;
+            height: 60px;
+            padding: 10px;
+            background-color: #B83922;
+            border-bottom-left-radius: 50px;
+            border-top-left-radius: 50px;
+
+            .svg{
+                margin-left: 15px;
+                display: inline;
+            }
+
+            .burger-menu{
+                display: none;
+                flex-direction: column;
+                cursor: pointer;
+                align-items: center;
+                justify-content: center;
+                padding: 3px;
+
+                span{
+                    background-color: white;
+                    height: 3px;
+                    width: 25px;
+                    margin: 3px;
+                    border-radius: 3px;
+                }
+            }
+        }
+    }
+
+    .block{
+        width: 100%;
+        background-color: #1D1B2B;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        color: white;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        h2{
+            text-transform: uppercase;
+            margin-bottom: 40px;
+            margin-left: -710px;
+        }
+
+        img{
+            max-width: 900px;
+            margin-bottom: 50px;
+        }
+
+        .text{
+            display: flex;
+            width: 900px;
+            justify-content: space-around;
+
+            .left{
+                max-width: 350px;
+
+                h3{
+                    margin-bottom: 40px;
+                }
+            }
+
+            .left p:nth-child(3){
+                margin-top: 30px;
+                color: grey;
+                font-style: italic;
+            }
+
+            .rigth{
+                max-width: 320px;
+                
+                h3{
+                    margin-bottom: 40px;
+                }
+
+                .content-li{
+                    .li-item{
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+
+        .button1{
+            text-transform: uppercase;
+            font-family: "Montserrat", sans-serif;
+            margin-top: 40px;
+            margin-left: -700px;
+            padding: 15px;
+            width: 170px;
+            font-size: 15px;
+            color: white;
+            border: #D4482F 2px solid;
+            border-radius: 15px;
+            background: radial-gradient(circle, #3C222C 30%, #ff4b2b5f);
+          }
+    }
+
+    .footer{
+        background-color: #B83922;
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+
+        .icon{
+            display: flex;
+            margin-left: 60px;
+            color: white;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            svg{
+                margin-top: -35px;
+                margin-right: -20px;
+            }
+        }
+
+        .menu2{
+            margin-right: -150px;
+
+            a{
+                text-decoration: none;
+                list-style-type: none;
+                color: white;
+                margin-top: 30px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+                .item{
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .contacts{
+            display: flex;
+            flex-direction: column;
+
+            a{
+                text-decoration: none;
+                list-style-type: none;
+                color: white;
+                margin-top: 20px;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }
+}
+}
+
+@media (max-width: 375px) {
+    body{
+        padding: 0;
+        margin: 0;
+        
+        .header{
+            width: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .left-side{
+                width: 100px;
+
+                svg{
+                    margin-top: -35px;
+                    margin-right: 0px;
+                }
+            }
+
+            h2{
+                margin: 0;
+            }
+
+            .menu{
+                display: none;
+            }
+
+            .icons{
+                width: 100px;
+                .svg{
+                    display: none;
+                }
+
+                .burger-menu{
+                    display: flex;
+                }
+            }
+        }
+
+        .block{
+            display: flex;
+            flex-direction: column;
+
+            h2{
+                margin: 0;
+                margin-bottom: 30px;
+            }
+
+            img{
+                width: 320px;
+            }
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+                width: 320px;
+            }
+
+            .button1{
+                margin: 0;
+                margin-top: 30px;
+            }
+        }
+
+        .footer{
+            display: flex;
+            flex-direction: column;
+
+            .icon{
+                margin: 0;
+                margin-left: -30px;
+            }
+
+            .menu2{
+                margin-bottom: 30px;
+                width: 320px;
+            }
+        }
+    }
+}
